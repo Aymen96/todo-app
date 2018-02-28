@@ -1,0 +1,84 @@
+$primary-color : #C63D0F;
+$box-bg-color : #FDF3E7;
+.app-wrapper {
+  padding:4px;
+  width: 720px;
+  margin: 100px auto 10px;
+  border-radius: 4px;
+  background-color: $box-bg-color;
+}
+
+.todoapp {
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  padding: 15px 25px;
+  font-family: "Agency FB";
+  min-height:600px;
+  width:100%;
+  position:relative;
+  h1 {
+    text-align:center;
+    font-size: 3em;
+  }
+  input.new-todo {
+    padding: 6px 12px;
+    font-size: 2em;
+    border:none;
+    border-bottom: 2px solid $primary-color;
+    font-family: "Agency FB";
+    width:80%;
+    margin-left: 30px;
+    padding-left: 30px;
+    border-radius: 4px;
+  }
+  ul {
+    list-style-type: none;
+    &:last-child {
+      margin-bottom: 55px;
+    }
+  }
+  section.main {
+    font-size: 1.5em;
+    input.toggle {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+    }
+    li {
+      display:block;
+      width:80%;
+      margin-bottom:15px;
+      font-size: 1.2em;
+      .the-todo {
+        display:inline-block;
+        max-width:78%;
+      }
+      .destroy {
+        width:20%;
+        float:right;
+        vertical-align: top;
+      }
+    }
+  }
+  .view {
+    margin:0;
+    padding:0;
+  }
+  button {
+    padding:5px;
+    border:none;
+    font-family: "Agency FB";
+    font-size: .8em;
+    height:40px;
+    width:100px;
+    background-color: $primary-color;
+    color:#fff;
+    border-radius: 8px;
+
+  }
+  footer.footer .todo-count{
+    font-size:1.5em;
+    position:absolute;
+    bottom:10px;
+  }
+}
